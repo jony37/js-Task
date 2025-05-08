@@ -66,7 +66,6 @@
 //     }
 // }
 
-
 /////////////////////////////////////////////////////////////////////// 5 chi masala
 
 // const students = [
@@ -100,12 +99,12 @@
 //     grade: 70,
 //     major: "History",
 //   },
-  
+
 // ];
 
 // for (let i = 0; i < students.length; i++) {
 //     const { name, grade, major } = students[i];
-  
+
 //     if (grade <= 75) {
 //       console.log(`${name} ${grade} F ${major}`);
 //     } else if (grade <= 80) {
@@ -118,7 +117,6 @@
 //       console.log(`${name} ${grade} A+ ${major}`); // Дополнительно: для оценок выше 90
 //     }
 //   }
-  
 
 //**************************************** */ UYGI VAZIFA ***************************************************
 
@@ -127,25 +125,10 @@
 //     for (let tub = 0; tub < i; tub++) {
 //         if (tub % i === 0) {
 //             console.log(tub);
-            
+
 //         }
 //     }
 // }
-
-
-for (let num = 2; num <= 20; num++) {
-    let isTub = true;
-    for (let i = 2; i < num; i++) {
-        if (num % i === 0) {
-            isTub = false;
-            break;
-        }
-    }
-    if (isTub) {
-        console.log(num);
-    }
-}
-
 
 // 'use strict'
 
@@ -215,7 +198,6 @@ for (let num = 2; num <= 20; num++) {
 //     }
 // }
 
-
 /////////////////////////////////////////////////////////////////////// 5 chi masala
 
 // const students = [
@@ -249,12 +231,12 @@ for (let num = 2; num <= 20; num++) {
 //     grade: 70,
 //     major: "History",
 //   },
-  
+
 // ];
 
 // for (let i = 0; i < students.length; i++) {
 //     const { name, grade, major } = students[i];
-  
+
 //     if (grade <= 75) {
 //       console.log(`${name} ${grade} F ${major}`);
 //     } else if (grade <= 80) {
@@ -267,7 +249,6 @@ for (let num = 2; num <= 20; num++) {
 //       console.log(`${name} ${grade} A+ ${major}`); // Дополнительно: для оценок выше 90
 //     }
 //   }
-  
 
 //**************************************** */ UYGI VAZIFA ***************************************************
 // for (let num = 2; num <= 20; num++) {
@@ -282,5 +263,41 @@ for (let num = 2; num <= 20; num++) {
 //         console.log(num);
 //     }
 // }
+// for (let num = 2; num <= 20; num++) {
+//   let isTub = true;
+//   for (let i = 2; i < num; i++) {
+//     if (num % i === 0) {
+//       isTub = false;
+//       break;
+//     }
+//   }
 
+//   if (isTub) {
+//     console.log(num);
+//   }
+// }
 
+// let arr = [1,2,3,4,5,6,7]
+// let arrUzunligi = 0;
+
+// for (let i in arr) {
+//   arrUzunligi++;
+// }
+
+// console.log(arrUzunligi);
+
+// *************************************** rest operatori
+// const total = (...numbers) => {
+//   return numbers.reduce((acc, curr) => acc + curr, 0);
+// };
+// total(10, 15, 20, 25);
+// const [first, ...otherValues] = [10, 15, 20, 25];
+// console.log(first); // 10
+// console.log(otherValues); // [15, 20, 25]
+// const { name, ...otherProperties } = {
+//   name: "Ulugbek",
+//   age: 25,
+//   job: "Software Engineer",
+// };
+// console.log(name); // 'Ulugbek'
+// console.log(otherProperties); // { age: 25, job: 'Software Engineer' }
