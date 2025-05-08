@@ -286,7 +286,9 @@
 
 // console.log(arrUzunligi);
 
-// *************************************** rest operatori
+// *************************************** Rest operatori ********************************
+// Rest operatori bir nechta elementlarni array’ga yoki bir nechta xususiyatlarni obyektga to'playdi.
+
 // const total = (...numbers) => {
 //   return numbers.reduce((acc, curr) => acc + curr, 0);
 // };
@@ -301,3 +303,18 @@
 // };
 // console.log(name); // 'Ulugbek'
 // console.log(otherProperties); // { age: 25, job: 'Software Engineer' }
+
+
+// *************************************** Spread operatori ********************************
+// Spread operatori iteratsiya elementlarini yoki obyektning xususiyatlarini "yoyadi".
+
+// const numbers = [10, 15, 20];
+// const max = Math.max(...numbers); // Math.max(10, 15, 20);
+// console.log(max);
+// const array1 = [10, 15, 20];
+// const array2 = [...array1, 25, 30]; // [10, 15, 20, 25, 30]
+// console.log(array2);
+// const person = { name: 'Ulugbek', age: 25 };
+// const personWithJob = { ...person, job: 'Software Engineer' }; // { name: 'Ulugbek', age: 25, job: 'Software Engineer' };
+// console.log(personWithJob);
+
