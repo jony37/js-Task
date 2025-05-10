@@ -304,7 +304,6 @@
 // console.log(name); // 'Ulugbek'
 // console.log(otherProperties); // { age: 25, job: 'Software Engineer' }
 
-
 // *************************************** Spread operatori ********************************
 // Spread operatori iteratsiya elementlarini yoki obyektning xususiyatlarini "yoyadi".
 
@@ -318,3 +317,55 @@
 // const personWithJob = { ...person, job: 'Software Engineer' }; // { name: 'Ulugbek', age: 25, job: 'Software Engineer' };
 // console.log(personWithJob);
 
+// /////////////////////////////////////// ///////////////////  Short circuit, Nullish va Optional chaining
+// console.log(true || false); // true
+// console.log(10 || 'Ulugbek'); // 10
+// console.log('' || 'Ulugbek'); // Ulugbek
+// console.log(true || 0); // true
+// const person = {
+// name: 'Ulugbek',
+// age: 25
+// };
+
+// console.log(true && false); // false
+// console.log(0 && 'Ulugbek'); // 0
+// console.log('' && 'Ulugbek'); //
+// console.log(true && null); // null
+// const person = {
+// name: 'Ulugbek',
+// age: 25
+// };
+// console.log(person.job && 'Person has a job');
+
+// const subject = "";
+// const emailSubject = subject ?? "A default subject";
+// console.log(emailSubject);
+
+// const person = {
+//   name: "Ulugbek",
+//   age: 25,
+// };
+// const companyName = person.job?.companyName;
+// console.log(companyName);
+// console.log(person.study?.());
+
+
+
+// Call
+function getCall (gretting, hobby) {
+  console.log(gretting, "my name is", this.name, "iam", this.age, "my hobbi is", hobby);
+}
+
+
+const obj = {
+  name: "Jaxon",
+  age: 18
+}
+
+getCall.call(obj, "Hello", "play footbal")
+
+
+// Apply
+function getApply (gretting, hobby) {
+  
+}
